@@ -1,22 +1,19 @@
 import React from "react";
-import { Routes, Route, Navigate, useMatch } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import PublicLayout from "../../layouts/public/PublicLayout";
-
+import AboutMePage from "./pages/about-me/AboutMePage";
 
 const PublicView = () => {
-  const match = useMatch("/about-me"); // use useMatch instead of useRouteMatch
-
   return (
     <React.Fragment>
       <PublicLayout>
         <Routes>
-          {/* Use Navigate for redirects */}
-          <Route path="/" element={<Navigate to="about-me"  />} />
-          
+          <Route path="/public/*" element={<Navigate to="./about-me" />} />
+          <Route path="/public/about-me" element={<AboutMePage />} />
         </Routes>
       </PublicLayout>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default PublicView;
+export default PublicView

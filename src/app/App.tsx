@@ -7,6 +7,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/public" />} />
+        <Route path="/public/*" element={<Navigate to="./about-me" />} />
         <Route path="/public" element={<PublicView />} />
       </Routes>
     </Router>

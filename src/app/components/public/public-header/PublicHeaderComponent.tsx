@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
-
-
+import Style from "./PublicHeaderComponent.module.scss"
 
 const PublicHeaderComponent = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -12,9 +11,11 @@ const PublicHeaderComponent = () => {
     }, [])
 
 
-    
+
     return <React.Fragment>
-       
+        <div className={`${Style['container']} ${isScrolled ? Style.scrolled : ""}`}>
+
+        </div>
     </React.Fragment>
 }
 

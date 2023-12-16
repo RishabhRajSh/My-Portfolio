@@ -1,13 +1,16 @@
 import React from "react"
-import Style from "./AboutUsPage.module.scss"
+import Style from "./AboutMePage.module.scss"
+import SectionBannerAboutMe from "../../../../components/public/section-banner-about-me/SectionBannerAboutMeComponent"
 
-const AboutUsPage = () => {
+
+const AboutMePage = () => {
     return <React.Fragment>
         <div className={Style['container']}>
+            <SectionBannerAboutMe />
            
         </div>
     </React.Fragment >
 
 }
 
-export default AboutUsPage
+export default AboutMePage
