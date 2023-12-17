@@ -1,0 +1,40 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+  
+    .iconContainer {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .cardIcon {
+        width: 50px;
+        height: 50px;
+        margin: 6px;
+      }
+    }
+  
+    .cardContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .cardTitle {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+        text-align: center;
+      }
+  
+      .cardDescription {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+}
