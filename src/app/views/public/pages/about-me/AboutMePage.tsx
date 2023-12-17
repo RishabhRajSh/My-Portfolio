@@ -7,6 +7,7 @@ const AboutMePage = () => {
     return <React.Fragment>
         <div className={Style['container']}>
             <SectionBannerAboutMe />
+            <h1>Hello</h1>
            
         </div>
     </React.Fragment >
