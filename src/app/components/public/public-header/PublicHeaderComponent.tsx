@@ -14,7 +14,8 @@ const PublicHeaderComponent = () => {
 
     return <React.Fragment>
         <div className={`${Style['container']} ${isScrolled ? Style.scrolled : ""}`}>
-
+        <p>Portfolio</p>
+        <span>Rishabh Raj Sharma</span>
         </div>
     </React.Fragment>
 }

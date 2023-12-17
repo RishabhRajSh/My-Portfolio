@@ -6,12 +6,15 @@ import AboutMePage from "./pages/about-me/AboutMePage";
 const PublicView = () => {
   return (
     <React.Fragment>
-      <PublicLayout>
+      <AboutMePage />
+      {/* <PublicLayout>
+      
         <Routes>
           <Route path="/public/*" element={<Navigate to="/public/about-me" />} />
+          
           <Route path="/public/about-me" element={<AboutMePage />} />
         </Routes>
-      </PublicLayout>
+      </PublicLayout> */}
     </React.Fragment>
   );
 }

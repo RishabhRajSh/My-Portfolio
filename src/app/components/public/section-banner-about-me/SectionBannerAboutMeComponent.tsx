@@ -4,7 +4,14 @@ import Style from "./SectionBannerAboutMeComponent.module.scss";
 const SectionBannerAboutMe = () => {
     return <React.Fragment>
         <div className={Style["container"]}>
-        <h1>Hello There</h1>
+            <div className={Style["content"]}>
+                <div className={Style["text-wrapper"]}>
+                    <h1>Elevating Experiences Through Design.</h1>
+                    <button>Download Resume</button>
+                    <button>View Figma</button>
+                </div>
+            </div>
+
         </div>
     </React.Fragment>
 }
