@@ -1,4 +1,3 @@
-// PublicView component
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import PublicLayout from "../../layouts/public/PublicLayout";
@@ -9,7 +8,7 @@ const PublicView = () => {
     <React.Fragment>
       <PublicLayout>
         <Routes>
-          <Route path="/public" element={<Navigate to="/public/about-me" />} />
+          <Route path="/public/*" element={<Navigate to="/public/about-me" />} />
           <Route path="/public/about-me" element={<AboutMePage />} />
         </Routes>
       </PublicLayout>

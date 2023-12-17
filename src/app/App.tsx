@@ -1,4 +1,3 @@
-// App component
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import PublicView from "./views/public/PublicView";
@@ -8,7 +7,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/public" />} />
-        <Route path="/public" element={<PublicView />} />
+        <Route path="/public/*" element={<PublicView />} />
       </Routes>
     </Router>
   );
