@@ -1,3 +1,9 @@
-.container{
-width: 100%;
-}
+.container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    justify-content: space-between;
+    margin: 50px 50px;
+  }
