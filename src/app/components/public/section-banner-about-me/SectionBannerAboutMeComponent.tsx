@@ -11,7 +11,6 @@ const SectionBannerAboutMe = () => {
                     <button>View Figma</button>
                 </div>
             </div>
-
         </div>
     </React.Fragment>
 }

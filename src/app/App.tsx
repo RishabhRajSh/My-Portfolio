@@ -6,7 +6,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/public" />} />
+        <Route path="/" element={<Navigate to="/public/about-me" />} />
         <Route path="/public/*" element={<PublicView />} />
       </Routes>
     </Router>

@@ -1,20 +1,16 @@
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import PublicLayout from "../../layouts/public/PublicLayout";
+import { Route, Routes } from "react-router-dom";
 import AboutMePage from "./pages/about-me/AboutMePage";
+import PublicLayout from "../../layouts/public/PublicLayout";
+import React from "react";
 
 const PublicView = () => {
   return (
     <React.Fragment>
-      <AboutMePage />
-      {/* <PublicLayout>
-      
+      <PublicLayout>
         <Routes>
-          <Route path="/public/*" element={<Navigate to="/public/about-me" />} />
-          
-          <Route path="/public/about-me" element={<AboutMePage />} />
+          <Route path="/about-me" element={<AboutMePage />} />
         </Routes>
-      </PublicLayout> */}
+      </PublicLayout>
     </React.Fragment>
   );
 }
