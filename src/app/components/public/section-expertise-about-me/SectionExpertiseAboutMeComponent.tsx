@@ -13,6 +13,8 @@ import IconReact from "../../../../assets/icon/IconReactJs.svg"
 import IconAngular from "../../../../assets/icon/IconAngularJs.svg"
 import IconGithub from "../../../../assets/icon/IconGithub.svg"
 import IconGitlab from "../../../../assets/icon/IconGitlab.svg"
+import IconGit from "../../../../assets/icon/IconGit.svg"
+import IconTS from "../../../../assets/icon/IconTypeScript.svg"
 
 
 const SectionExpertise = () => {
@@ -20,6 +22,7 @@ const SectionExpertise = () => {
         <React.Fragment>
             <div className={Style['container']}>
                 <h2>My Expertise</h2>
+                <div className={Style['card-wrapper']}>
                 <CardComponent 
                     title="Graphics Designing" 
                     description="" 
@@ -33,13 +36,14 @@ const SectionExpertise = () => {
                 <CardComponent 
                     title="Frameworks & Library" 
                     description="" 
-                    icon={[IconAngular, IconReact]} 
+                    icon={[IconTS, IconAngular, IconReact]} 
                 />
                 <CardComponent 
                     title="Version Control" 
                     description="" 
-                    icon={[IconGithub, IconGitlab]} 
+                    icon={[IconGithub, IconGitlab, IconGit]} 
                 />
+                </div>
             </div>
         </React.Fragment>
     )
