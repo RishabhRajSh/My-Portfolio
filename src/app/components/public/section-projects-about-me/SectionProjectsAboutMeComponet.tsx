@@ -3,7 +3,7 @@ import Style from "./SectionProjectsAboutMeComponet.module.scss";
 const SectionProjects = () => {
     return <React.Fragment>
           <div className={Style['container']}>
-            <h2>Projects</h2>
+            <h2>Project Gallery</h2>
         </div>
     </React.Fragment>
 }
