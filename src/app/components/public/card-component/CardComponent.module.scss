@@ -49,11 +49,13 @@
 @media (max-width: 480px) {
   .card {
     width: 164px;
+    height: 220px;
     margin: 12px;
 
     .iconContainer {
       .cardIcon {
-        height: 32px;
+        height: 44px;
+        margin: 6px;
       }
     }
 
