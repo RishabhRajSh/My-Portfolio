@@ -1,3 +1,43 @@
-.container{
+.container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0px;
+
+        
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+
+        img {
+            height: 50px;
+        }
+
+        h3 {
+            font-weight: 500;
+        }
+        p{
+            font-size: 14px;
+        }
+        ul{
+            font-size: 16px;
+            font-weight: 500;
+            list-style: none;
+            margin-bottom: 6px;
+        }
+        li{
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+    }
+
+}
+@media (max-width: 480px){
+    .container{
+        padding: 64px 0px;
+    }
 }

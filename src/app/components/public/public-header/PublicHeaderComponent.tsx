@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Style from "./PublicHeaderComponent.module.scss"
+import MyLogo from "../../../../assets/icon/IconLogo.svg"
 
 const PublicHeaderComponent = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -12,7 +13,7 @@ const PublicHeaderComponent = () => {
 
     return <React.Fragment>
         <div className={`${Style['container']} ${isScrolled ? Style.scrolled : ""}`}>
-            <p>Rishabh Raj Sharma</p>
+            <img src={MyLogo} alt="Rishabh Raj Sharma" />
             <button>Let's get connected</button>
         </div>
     </React.Fragment>

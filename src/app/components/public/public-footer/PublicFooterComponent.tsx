@@ -4,9 +4,9 @@ import Style from "./PublicFooterComponent.module.scss"
 const PublicFooterComponent = () => {
     return <React.Fragment>
         <div className={Style["container"]}>
-        <div className={Style['container']}>
-            <h2>Footer</h2>
-        </div>
+            <div className={Style['content']}>
+                <p>Made by Rishabh Raj Sharma — Copyright 2023</p>
+            </div>
         </div>
      
     </React.Fragment>
