@@ -1,9 +1,76 @@
 .container {
+    display: flex;
+    align-items: center;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url('../../../../assets/images/ImgPatternBg.svg'), linear-gradient(180deg, rgba(87, 149, 241, 0.00)70.84%, rgba(0, 72, 180, 0.09) 100%), #F4F4F5;
+    background-size:cover;
+    background-position: center;
+    height: 75vh;
 
     .content {
-        margin-top: 100px;
+        padding: 50px;
+
+        .text-wrapper {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                letter-spacing: 0.5px;
+                line-height: 24px;
+                font-size: 14px;
+
+            }
+            .btn-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 12px;
+                
+                button {
+                    display: inline-flex;
+                    align-items: center;
+                    margin-right: 12px;
+                    padding: 12px;
+                    border-radius: 6px;
+                    border: none;
+                    background: #0C8CE9;
+                    color: white;
+                    font-size: 14px;
+                    letter-spacing: 0.56px;
+
+                    img{
+                        margin-right: 6px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    &:active  {
+                      background: #F78F14;
+                      color: white;
+                    }
+
+            }
+
+        }
     }
+
+    @media (min-width: 720px) {
+
+
+        .content {
+            .text-wrapper {
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
 }
