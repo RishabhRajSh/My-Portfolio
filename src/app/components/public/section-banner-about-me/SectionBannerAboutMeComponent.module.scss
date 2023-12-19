@@ -3,13 +3,15 @@
     align-items: center;
     width: 100%;
     background: url('../../../../assets/images/ImgPatternBg.svg'), linear-gradient(180deg, rgba(87, 149, 241, 0.00)70.84%, rgba(0, 72, 180, 0.09) 100%), #F4F4F5;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    height: 75vh;
+    min-height: 75vh;
 
     .content {
+        display: flex;
+        flex-grow: 1;
         padding: 50px;
-
+        
         .text-wrapper {
 
             display: flex;
@@ -23,11 +25,34 @@
                 font-size: 14px;
 
             }
-            .btn-wrapper{
+
+            .btn-wrapper {
                 display: flex;
                 flex-wrap: wrap;
                 margin-top: 12px;
-                
+
+                .btn-cv {
+                    background: #F78F14;
+                    color: white;
+
+                    &:active {
+                        background: #0C8CE9;
+                        color: white;
+                    }
+
+                }
+
+                .btn-figma {
+                    background: linear-gradient(95deg, #FF7262 8%, #A259FF 39.13%, #1ABCFE 69.27%, #0ACF83 100%);
+                    color: white;
+
+                    &:active {
+                        background: #F78F14;
+                        color: white;
+                    }
+
+                }
+
                 button {
                     display: inline-flex;
                     align-items: center;
@@ -35,12 +60,10 @@
                     padding: 12px;
                     border-radius: 6px;
                     border: none;
-                    background: #0C8CE9;
-                    color: white;
                     font-size: 14px;
                     letter-spacing: 0.56px;
 
-                    img{
+                    img {
                         margin-right: 6px;
                         width: 20px;
                         height: 20px;
@@ -50,27 +73,23 @@
                         margin-right: 0;
                     }
 
-                    &:active  {
-                      background: #F78F14;
-                      color: white;
-                    }
-
-            }
-
-        }
-    }
-
-    @media (min-width: 720px) {
 
 
-        .content {
-            .text-wrapper {
-
-                p {
-                    font-size: 18px;
                 }
+
             }
         }
+
+        @media (min-width: 720px) {
+
+            .content, .text-wrapper{
+                align-items: flex-start;
+                max-width: 900px;
+                margin-left: 32px;
+            .text {
+                font-size: 16px;
+            }
+        }
+        }
     }
-}
 }

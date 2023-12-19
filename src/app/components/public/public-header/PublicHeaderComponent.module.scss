@@ -3,8 +3,9 @@
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 9;
-  padding: 10px;
+  padding: 6px;
 
   &.scrolled {
     background: rgba(255, 255, 255, 0.75);
@@ -19,6 +20,7 @@
   button {
     display: inline-flex;
     align-items: center;
+    height: 42px;
     margin-right: 20px;
     padding: 12px;
     border-radius: 6px;
