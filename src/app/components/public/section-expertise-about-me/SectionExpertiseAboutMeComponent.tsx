@@ -26,23 +26,19 @@ const SectionExpertise = () => {
                     <CardComponent
                         title="Graphics Designing"
                         description=""
-                        icon={[IconFigma, IconAdodeXd, IconAdobeIl, IconAdobePS, IconFramer]}
-                    />
+                        icon={[IconFigma, IconAdodeXd, IconAdobeIl, IconAdobePS, IconFramer]} image={[]}                    />
                     <CardComponent
                         title="Programming languages"
                         description=""
-                        icon={[IconC, IconPython, IconJS]}
-                    />
+                        icon={[IconC, IconPython, IconJS]} image={[]}                    />
                     <CardComponent
                         title="Frameworks & Library"
                         description=""
-                        icon={[IconTS, IconAngular, IconReact]}
-                    />
+                        icon={[IconTS, IconAngular, IconReact]} image={[]}                    />
                     <CardComponent
                         title="Version Control"
                         description=""
-                        icon={[IconGithub, IconGitlab, IconGit]}
-                    />
+                        icon={[IconGithub, IconGitlab, IconGit]} image={[]}                    />
                 </div>
             </div>
         </React.Fragment>
