@@ -1,13 +1,9 @@
 import React from "react";
 import Style from "./SectionEducationAboutMeComponent.module.scss";
 
-type SectionEducationProps = {
-    className?: string;
-  };
-
-const SectionEducation : React.FC<SectionEducationProps> = ({ className }) => {
+const SectionEducation = () => {
     return <React.Fragment>
-        <div className={`${Style['container']} ${className}`}>
+        <div className={Style['container']}>
             <h2>My Education</h2>
         </div>
 

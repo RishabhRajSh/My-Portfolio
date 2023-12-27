@@ -4,17 +4,13 @@ import LogoAccuratics from "../../../../assets/icon/LogoAccuraticsSoftwares.svg"
 import GalleryComponent from "../image-gallery/ImageGalleryComponent";
 import Astro from "../../../../assets/images/ImgBanner.png"
 
-type SectionEmployementProps = {
-    className?: string;
-  };
-  
 
-  const SectionEmployement: React.FC<SectionEmployementProps> = ({ className }) => {
+  const SectionEmployement = () => {
 
 
     return (
         <React.Fragment>
-            <div className={`${Style['container']} ${className}`}>
+            <div className={Style['container']}>
                 <div className={Style['content-wrapper']}>
                     <div className={Style['content']}>
                         <h2>Current Employment</h2>

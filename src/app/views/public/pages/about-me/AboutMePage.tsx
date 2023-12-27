@@ -8,35 +8,16 @@ import SectionEmployement from "../../../../components/public/section-employemen
 import SectionEducation from "../../../../components/public/section-education-about-me/SectionEducationAboutMeComponent";
 
 const AboutMePage = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll('.section');
-      sections.forEach((section: Element) => {
-        const sectionElement = section as HTMLElement;
-        if (window.scrollY > sectionElement.offsetTop - sectionElement.offsetHeight) {
-          sectionElement.classList.add('hide');
-        } else {
-          sectionElement.classList.remove('hide');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <React.Fragment>
       <div className={Style['container']}>
-        <SectionBannerAboutMe className="section" />
-        <SectionExpertise className="section" />
-        <SectionEmployement className="section" />
-        <SectionProjects className="section" />
-        <SectionEducation className="section" />
-        <SectionContact className="section" />
+        <SectionBannerAboutMe />
+        <SectionExpertise />
+        <SectionEmployement  />
+        <SectionProjects  />
+        <SectionEducation />
+        <SectionContact  />
       </div>
     </React.Fragment>
   );

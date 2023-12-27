@@ -16,15 +16,12 @@ import IconGitlab from "../../../../assets/icon/IconGitlab.svg"
 import IconGit from "../../../../assets/icon/IconGit.svg"
 import IconTS from "../../../../assets/icon/IconTypeScript.svg"
 
-type SectionExpertiseProps = {
-    className?: string;
-  };
-  
 
-const SectionExpertise: React.FC<SectionExpertiseProps> = ({ className }) => {
+
+const SectionExpertise = () =>   {
     return (
         <React.Fragment>
-            <div className={`${Style['container']} ${className}`}>
+            <div className={Style['container']}>
                 <h2>My Expertise</h2>
                 <div className={Style['card-wrapper']}>
                     <CardComponent
