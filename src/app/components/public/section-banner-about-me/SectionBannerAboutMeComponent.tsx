@@ -3,9 +3,13 @@ import Style from "./SectionBannerAboutMeComponent.module.scss";
 import PaperClipIcon from "../../../../assets/icon/paperclip_bold.svg";
 import FigmaIcon from "../../../../assets/icon/IconFigmaStrokeWhite.svg";
 
-const SectionBannerAboutMe = () => {
+type SectionBannerProps = {
+    className?: string;
+  };
+
+const SectionBannerAboutMe : React.FC<SectionBannerProps> = ({ className }) => {
     return <React.Fragment>
-        <div className={Style["container"]}>
+        <div className={`${Style['container']} ${className}`}>
             <div className={Style["content"]}>
                 <div className={Style["text-wrapper"]}>
                     <h4>Ui/Ux Developer</h4>

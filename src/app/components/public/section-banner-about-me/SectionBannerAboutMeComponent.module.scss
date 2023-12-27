@@ -94,3 +94,10 @@
         }
     }
 }
+.section {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .section.hide {
+    opacity: 0;
+  }
