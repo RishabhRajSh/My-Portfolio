@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./SectionExpertiseAboutMeComponent.module.scss";
-import CardComponent from '../card-component/CardComponent';
+import CardComponent from '../../atoms/ui-component/card-component/CardComponent';
 import IconFigma from "../../../../assets/icon/IconFigma.svg"
 import IconAdobePS from "../../../../assets/icon/IconAdobePhotoshop.svg"
 import IconAdobeIl from "../../../../assets/icon/IconAdobeIllustrator.svg"
@@ -27,19 +27,27 @@ const SectionExpertise = () =>   {
                     <CardComponent
                         title="Graphics Designing"
                         description=""
-                        icon={[IconFigma, IconAdodeXd, IconAdobeIl, IconAdobePS, IconFramer]} image={[]}                    />
+                        icon={[IconFigma, IconAdodeXd, IconAdobeIl, IconAdobePS, IconFramer]} 
+                        bgcolor={[]}
+                        image={[]}                    />
                     <CardComponent
                         title="Programming languages"
                         description=""
-                        icon={[IconC, IconPython, IconJS]} image={[]}                    />
+                        icon={[IconC, IconPython, IconJS]} 
+                        bgcolor={[]}
+                        image={[]}                    />
                     <CardComponent
                         title="Frameworks & Library"
                         description=""
-                        icon={[IconTS, IconAngular, IconReact]} image={[]}                    />
+                        icon={[IconTS, IconAngular, IconReact]}
+                        bgcolor={[]}
+                        image={[]}                    />
                     <CardComponent
                         title="Version Control"
                         description=""
-                        icon={[IconGithub, IconGitlab, IconGit]} image={[]}                    />
+                        icon={[IconGithub, IconGitlab, IconGit]} 
+                        bgcolor={[]}
+                        image={[]}                    />
                 </div>
             </div>
         </React.Fragment>

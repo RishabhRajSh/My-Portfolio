@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     width: 100%;
-    background: url('../../../../assets/images/ImgPatternBg.svg'), linear-gradient(180deg, rgba(87, 149, 241, 0.00)70.84%, rgba(0, 72, 180, 0.09) 100%), #F4F4F5;
+    // background: url('../../../../assets/images/ImgPatternBg.svg'), linear-gradient(180deg, rgba(87, 149, 241, 0.00)70.84%, rgba(0, 72, 180, 0.09) 100%), #F4F4F5;
+    background: url('../../../../assets/images/ImgPatternBg.svg'),  #1e1e1e;
     background-size: cover;
     background-position: center;
     min-height: 75vh;
@@ -11,6 +12,7 @@
         display: flex;
         flex-grow: 1;
         padding: 50px;
+        color: white;
 
         .text-wrapper {
 

@@ -1,12 +1,12 @@
 import React from "react";
 import Style from "./SectionEmployementAboutMeComponent.module.scss";
 import LogoAccuratics from "../../../../assets/icon/LogoAccuraticsSoftwares.svg";
-import GalleryComponent from "../image-gallery/ImageGalleryComponent";
-import Astro from "../../../../assets/images/ImgBanner.png"
+import VerticleSlider from "../../atoms/verticle-slider-component/VerticleSliderComponent";
+import FoodUiMockUp from "../../../../assets/images/ImgFoodOrderUiMockup.png";
+import BankingUiMockUp from "../../../../assets/images/ImgBankingAppUiMockup.png";
+import AdvUiMockUp from "../../../../assets/images/ImgAdvetisementWebsiteMockup.png";
 
-
-  const SectionEmployement = () => {
-
+const SectionEmployement = () => {
 
     return (
         <React.Fragment>
@@ -19,36 +19,32 @@ import Astro from "../../../../assets/images/ImgBanner.png"
                         <p>ROLES AND RESPONSIBILITIES</p>
                     </div>
                     <div className={Style['gallery']}>
-                        <GalleryComponent
-                            title=""
-                            description="Led design for web and mobile apps, ensuring seamless integration"
-                            image={[Astro]}
-                            icon={[]} />
-                        <GalleryComponent
-                            title=""
-                            description="Worked on Frontend User Interface on React technology and Angular Technology."
-                            image={[Astro]}
-                            icon={[]} />
-                        <GalleryComponent
-                            title=""
-                            description="Conducted user research, enhancing user-centric design."
-                            image={[Astro]}
-                            icon={[]} />
-                        <GalleryComponent
-                            title=""
-                            description="Worked on CRUD operation."
-                            image={[Astro]}
-                            icon={[]} />
-                        <GalleryComponent
-                            title=""
-                            description="Collaborated with developers, product managers, and stakeholders."
-                            image={[Astro]}
-                            icon={[]} />
-                        <GalleryComponent
-                            title=""
-                            description="Used version control systems for Pull Requests, Merge Requests and Reviewing."
-                            image={[Astro]}
-                            icon={[]} />
+
+                        <VerticleSlider
+                            image={[FoodUiMockUp, BankingUiMockUp, AdvUiMockUp]} 
+                            description={['Led design for web and mobile apps, ensuring seamless integration.']}
+                        />
+                        <VerticleSlider
+                            image={[]} 
+                            description={['Worked on Frontend User Interface on React technology and Angular Technology.']}
+                        />
+                        <VerticleSlider
+                            image={[]} 
+                            description={['Conducted user research, enhancing user-centric design.']}
+                        />
+                        <VerticleSlider
+                            image={[]} 
+                            description={['Worked on CRUD operation.']}
+                        />
+                        <VerticleSlider
+                            image={[]} 
+                            description={['Collaborated with developers, product managers, and stakeholders.']}
+                        />
+                        <VerticleSlider
+                            image={[]} 
+                            description={['Used version control systems for Pull Requests, Merge Requests and Reviewing.']}
+                        />
+
                     </div>
                 </div>
             </div>
