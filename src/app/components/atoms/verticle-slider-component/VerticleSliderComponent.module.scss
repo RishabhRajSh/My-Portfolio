@@ -23,11 +23,6 @@
         width: 50%;
 
       }
-
-      .right-image {
-        z-index: 0;
-        height: auto;
-      }
     }
 
     .description {
@@ -46,6 +41,21 @@
   @media (max-width: 720px) {
     .content-wrapper {
       padding: 0px 14px;
+
+      .images{
+
+        .left-image {
+            width: 100%;
+            margin-bottom: 16px;
+          }
+    
+          .center-image,
+          .right-image {
+            width: 100%;
+            margin-bottom: 16px;
+    
+          }
+      }
     }
   }
 }
