@@ -11,7 +11,7 @@
         display: flex;
         flex-grow: 1;
         padding: 50px;
-        
+
         .text-wrapper {
 
             display: flex;
@@ -83,14 +83,16 @@
 
         @media (min-width: 720px) {
 
-            .content, .text-wrapper{
+            .content,
+            .text-wrapper {
                 align-items: flex-start;
                 max-width: 900px;
                 margin-left: 32px;
-            .text {
-                font-size: 16px;
+
+                .text {
+                    font-size: 16px;
+                }
             }
-        }
         }
     }
 }
