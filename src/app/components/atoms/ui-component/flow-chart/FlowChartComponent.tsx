@@ -16,25 +16,38 @@ const nodeTypes = {
     Circle, Rectangle, Diamond
 }
 
-const edges = [{ id: '1-2', source: '1', target: '2', type: 'step' }];
+const edges = [
+    {
+        id: '1-2',
+        source: '1',
+        target: '2',
+        type: 'step'
+    },
+    {
+        id: '2-3',
+        source: '2',
+        target: '3',
+        type: 'step'
+    },
+];
 const nodes = [
     {
         id: '1',
         type: 'Circle',
-        position: {x:0, y:0},
-        data: {label: "Start"},
+        position: { x: 0, y: 0 },
+        data: { label: "Start" },
     },
     {
         id: '2',
         type: 'Rectangle',
-        position: {x:500, y:0},
-        data: {label: "Start"},
+        position: { x: 500, y: 0 },
+        data: { label: "Start" },
     },
     {
         id: '3',
         type: 'Diamond',
-        position: {x:0, y:500},
-        data: {label: "Start"},
+        position: { x: 0, y: 500 },
+        data: { label: "Start" },
     },
 ]
 
