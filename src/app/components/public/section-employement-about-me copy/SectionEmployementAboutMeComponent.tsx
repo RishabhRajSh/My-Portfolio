@@ -1,10 +1,13 @@
 import React from "react";
 import Style from "./SectionEmployementAboutMeComponent.module.scss";
 import LogoAccuratics from "../../../../assets/icon/LogoAccuraticsSoftwares.svg";
-import VerticleSlider from "../../atoms/verticle-slider-component/VerticleSliderComponent";
+import VerticleSlider from "../../atoms/ui-component/verticle-slider-component/VerticleSliderComponent";
 import FoodUiMockUp from "../../../../assets/images/ImgFoodOrderUiMockup.png";
 import BankingUiMockUp from "../../../../assets/images/ImgBankingAppUiMockup.png";
 import AdvUiMockUp from "../../../../assets/images/ImgAdvetisementWebsiteMockup.png";
+import GisMockup from "../../../../assets/images/ImgGisMockup.png";
+import EcomMockup from "../../../../assets/images/ImgEcomMockup.png";
+import AsplMockup from "../../../../assets/images/ImgAsplMockup.png";
 
 const SectionEmployement = () => {
 
@@ -25,7 +28,7 @@ const SectionEmployement = () => {
                             description={['Led design for web and mobile apps, ensuring seamless integration.']}
                         />
                         <VerticleSlider
-                            image={[]} 
+                            image={[GisMockup, EcomMockup, AsplMockup ]} 
                             description={['Worked on Frontend User Interface on React technology and Angular Technology.']}
                         />
                         <VerticleSlider
