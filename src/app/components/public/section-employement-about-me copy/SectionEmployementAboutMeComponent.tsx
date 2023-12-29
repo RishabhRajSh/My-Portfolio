@@ -8,6 +8,7 @@ import AdvUiMockUp from "../../../../assets/images/ImgAdvetisementWebsiteMockup.
 import GisMockup from "../../../../assets/images/ImgGisMockup.png";
 import EcomMockup from "../../../../assets/images/ImgEcomMockup.png";
 import AsplMockup from "../../../../assets/images/ImgAsplMockup.png";
+import FlowchartComponent from "../../atoms/ui-component/flow-chart/FlowChartComponent";
 
 const SectionEmployement = () => {
 
@@ -31,10 +32,8 @@ const SectionEmployement = () => {
                             image={[GisMockup, EcomMockup, AsplMockup ]} 
                             description={['Worked on Frontend User Interface on React technology and Angular Technology.']}
                         />
-                        <VerticleSlider
-                            image={[]} 
-                            description={['Conducted user research, enhancing user-centric design.']}
-                        />
+                        <p className={Style['flowchart-heading']}>Conducted user research, enhancing user-centric design.</p>
+                        <FlowchartComponent />
                         <VerticleSlider
                             image={[]} 
                             description={['Worked on CRUD operation.']}

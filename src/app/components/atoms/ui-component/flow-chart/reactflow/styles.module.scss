@@ -1,0 +1,38 @@
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: white;
+  color: black;
+}
+
+.rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  color: black;
+}
+
+.diamond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  transform: rotate(45deg) ;
+
+  &>div {
+    transform:  rotate(-45deg);
+  }
+}
