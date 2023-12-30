@@ -1,38 +1,33 @@
-.circle {
+@mixin shape($borderColor, $bgColor, $textColor) {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 4px solid $borderColor;
   padding: 10px;
   height: 100px;
   width: 100px;
-  border-radius: 100px;
-  background-color: white;
-  color: black;
-}
-
-.rectangle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: white;
-  color: black;
-}
-
-.diamond {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: white;
-  color: black;
-  transform: rotate(45deg) ;
-
-  &>div {
-    transform:  rotate(-45deg);
+  background-color: $bgColor;
+  color: $textColor;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+ }
+ 
+ .circle {
+  @include shape(#8638e5, #f1e5ff, #8638e5);
+  border-radius: 200px;
+ }
+ 
+ .rectangle {
+  @include shape(#8638e5, #f1e5ff, #8638e5);
+ }
+ 
+ .diamond {
+  @include shape(#009951, #cff7d3, #009951);
+  transform: rotate(45deg);
+ 
+  > div {
+    transform: rotate(-45deg);
   }
-}
+ }
+ 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Style from "./AboutMePage.module.scss";
 import ScrollToTop from "react-scroll-to-top";
 import SectionBannerAboutMe from "../../../../components/public/section-banner-about-me/SectionBannerAboutMeComponent";

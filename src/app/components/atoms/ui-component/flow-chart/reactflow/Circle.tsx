@@ -2,11 +2,20 @@ import { memo } from "react";
 import { Handle, NodeProps, Position } from "reactflow";
 import Style from './styles.module.scss';
 
+interface CircleProps extends NodeProps {
+  data: {
+    label: string;
+    style?: React.CSSProperties;
+  };
+  targetPosition?: Position;
+  sourcePosition?: Position;
+}
+
 const Circle = ({
   data,
   targetPosition = Position.Right,
   sourcePosition = Position.Bottom
-}: NodeProps) => {
+}: CircleProps) => {
 
   return (
     <div className={Style['circle']}>
