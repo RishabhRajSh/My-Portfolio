@@ -14,7 +14,7 @@ interface CircleProps extends NodeProps {
 const Circle = ({
   data,
   targetPosition = Position.Right,
-  sourcePosition = Position.Bottom
+  sourcePosition = Position.Left
 }: CircleProps) => {
 
   return (

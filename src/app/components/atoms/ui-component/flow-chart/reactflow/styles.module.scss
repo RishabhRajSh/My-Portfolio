@@ -11,23 +11,24 @@
   font-weight: 500;
   font-size: 14px;
   text-align: center;
- }
- 
- .circle {
+}
+
+.circle {
   @include shape(#8638e5, #f1e5ff, #8638e5);
   border-radius: 200px;
- }
- 
- .rectangle {
+}
+
+.rectangle {
   @include shape(#8638e5, #f1e5ff, #8638e5);
- }
- 
- .diamond {
+  border-radius: 12%
+}
+
+.diamond {
   @include shape(#009951, #cff7d3, #009951);
   transform: rotate(45deg);
- 
-  > div {
+
+  >div {
     transform: rotate(-45deg);
   }
- }
- 
+}
+

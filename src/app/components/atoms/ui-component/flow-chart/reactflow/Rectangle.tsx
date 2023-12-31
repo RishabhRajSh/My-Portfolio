@@ -20,14 +20,14 @@ const Rectangle = ({
   return (
     <div className={Style['rectangle']} style={data.style}>
       <Handle
-        type="target"
+        type="source"
         position={targetPosition}
       />
       <div className={Style['content']}>
         {data?.label}
       </div>
       <Handle
-        type="source"
+        type="target"
         position={sourcePosition}
       />
     </div>
