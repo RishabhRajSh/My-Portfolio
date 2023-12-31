@@ -3,7 +3,6 @@ import Style from "./FlowChartComponent.module.scss";
 import ReactFlow, {
     Background,
     MarkerType,
-    EdgeTypes,
     Controls,
 } from "reactflow";
 import Circle from "./reactflow/Circle";
@@ -13,14 +12,7 @@ import "reactflow/dist/style.css";
 
 const edges = [
     {
-        id: '1-2',
-        source: '1',
-        target: '2',
-        style: { strokeWidth: 2 },
-        type: 'smoothstep',
-        markerEnd: {
-            type: MarkerType.ArrowClosed,
-        },
+        id: '1-2',  source: '1',   target: '2',  style: { strokeWidth: 2 },  type: 'smoothstep',  markerEnd: { type: MarkerType.ArrowClosed, },
     },
     {
         id: '2-3',
@@ -73,6 +65,148 @@ const edges = [
             type: MarkerType.ArrowClosed,
         },
     },
+    {
+        id: '7-5',
+        source: '5',
+        target: '7',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '7-8',
+        source: '7',
+        target: '8',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '8-9',
+        source: '8',
+        target: '9',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '9-10',
+        source: '9',
+        target: '10',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '9-11',
+        source: '9',
+        target: '11',
+        style: { strokeWidth: 2, stroke: 'red'},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '11-12',
+        source: '11',
+        target: '12',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '10-13',
+        source: '10',
+        target: '13',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '12-14',
+        source: '12',
+        target: '14',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '13-15',
+        source: '13',
+        target: '15',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '15-3',
+        animated: true,
+        source: '15',
+        target: '3',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '14-16',
+        source: '14',
+        target: '16',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '14-17',
+        source: '14',
+        target: '17',
+        style: { stroke: 'red', strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '16-3',
+        animated: true,
+        source: '16',
+        target: '3',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
+    {
+        id: '17-7',
+        source: '17',
+        target: '7',
+        style: { strokeWidth: 2},
+        type: 'smoothstep',
+        markerEnd: {
+            type: MarkerType.ArrowClosed,
+        },
+    },
 ];
 
 const nodes = [
@@ -113,6 +247,94 @@ const nodes = [
         data: {
             label: "Revise the website design",
             style: { borderColor: 'red', color: 'red', background: '#ffe2e0' },
+        },
+    },
+    {
+        id: '7',
+        type: 'Rectangle',
+        position: { x: 1500, y: 0 },
+        data: {
+            label: "Create advertisement content to promote local business and Scenic Places",
+        },
+    },
+    {
+        id: '8',
+        type: 'Rectangle',
+        position: { x: 1750, y: 0 },
+        data: {
+            label: "Test advertisement content",
+        },
+    },
+    {
+        id: '9',
+        type: 'Diamond',
+        position: { x: 2000, y: 0 },
+        data: {
+            label: "Is the advertisement content effective?",
+        },
+    },
+    {
+        id: '10',
+        type: 'Rectangle',
+        position: { x: 2500, y: 0 },
+        data: {
+            label: "Continue running the advertisement",
+        },
+    },
+    {
+        id: '11',
+        type: 'Rectangle',
+        position: { x: 2250, y: 250 },
+        data: {
+            label: "Stop the advertisement",
+        },
+    },
+    {
+        id: '12',
+        type: 'Rectangle',
+        position: { x: 2550, y: 250 },
+        data: {
+            label: "Analyze advertisement performance",
+        },
+    },
+    {
+        id: '13',
+        type: 'Rectangle',
+        position: { x: 2750, y: 0 },
+        data: {
+            label: "Evaluate user feedback though click rates",
+        },
+    },
+    {
+        id: '14',
+        type: 'Diamond',
+        position: { x: 3000, y: 250 },
+        data: {
+            label: "Is the advertisement underperforming due to website design?",
+        },
+    },
+    {
+        id: '15',
+        type: 'Rectangle',
+        position: { x: 3000, y: 0 },
+        data: {
+            label: "Implement necessary changes and Incentivize",
+        },
+    },
+    {
+        id: '16',
+        type: 'Rectangle',
+        position: { x: 3250, y: 250 },
+        data: {
+            label: "Revise the website design",
+        },
+    },
+    {
+        id: '17',
+        type: 'Rectangle',
+        position: { x: 3250, y: 500 },
+        data: {
+            label: "Revise the advertisement content",
         },
     },
 ]

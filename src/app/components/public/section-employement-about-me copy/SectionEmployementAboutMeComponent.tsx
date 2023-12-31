@@ -32,7 +32,8 @@ const SectionEmployement = () => {
                             image={[GisMockup, EcomMockup, AsplMockup ]} 
                             description={['Worked on Frontend User Interface on React technology and Angular Technology.']}
                         />
-                        <p className={Style['flowchart-heading']}>Conducted user research, enhancing user-centric design.</p>
+                        <h3 className={Style['flowchart-heading']}>Conducted user research, enhancing user-centric design.</h3>
+                        <p className={Style['flowchart-heading']}>An Example for an advertisement website project.</p>
                         <FlowchartComponent />
                         <VerticleSlider
                             image={[]} 
