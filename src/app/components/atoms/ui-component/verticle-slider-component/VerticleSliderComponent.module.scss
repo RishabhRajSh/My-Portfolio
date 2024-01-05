@@ -4,11 +4,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 64px;
+    // margin-bottom: 64px;
     // padding: 0px 240px;
 
     .images {
-      margin-top: 32px;
+      margin: 32px 0px;
       display: flex;
       flex-wrap: wrap;
       max-width: 100%; 
@@ -16,7 +16,6 @@
 
       .left-image {
         width: 60%;
-        margin-bottom: 16px;
       }
 
       .center-image,
@@ -30,6 +29,8 @@
       color: white;
       flex-grow: 1;
       text-align: center;
+      font-weight: 500;
+      
     }
   }
 

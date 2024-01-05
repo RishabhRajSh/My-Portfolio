@@ -6,7 +6,7 @@ const VerticleSlider: React.FC<VerticleSliderProps> = ({ description, image }) =
     return <React.Fragment>
         <div className={Style['container']}>
             <div className={Style['content-wrapper']}>
-                <p className={Style['description']}>{description}</p>
+                <h3 className={Style['description']}>{description}</h3>
                 <div className={Style['images']} >
                     <img src={image[0]} alt="Left Image" className={Style['left-image']} />
                     <img src={image[1]} alt="Center Image" className={Style['right-image']} />
