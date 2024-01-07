@@ -9,6 +9,7 @@ import GisMockup from "../../../../assets/images/ImgGisMockup.png";
 import EcomMockup from "../../../../assets/images/ImgEcomMockup.png";
 import AsplMockup from "../../../../assets/images/ImgAsplMockup.png";
 import FlowchartComponent from "../../atoms/ui-component/flow-chart/FlowChartComponent";
+import FancyScrollComponenet from "../../atoms/ui-component/fancy-scroll/FancyScrollComponent";
 
 const SectionEmployement = () => {
 
@@ -17,37 +18,28 @@ const SectionEmployement = () => {
             <div className={Style['container']}>
                 <div className={Style['content-wrapper']}>
                     <div className={Style['content']}>
-                        <h2>Current Employment</h2>
+                        <h2 className={Style['heading']}>Current Employment</h2>
                         <img className={Style['logo']} src={LogoAccuratics} alt='Accuratics Logo' />
-                        <h3>Accuratics Softwares</h3>
                         <p>ROLES AND RESPONSIBILITIES</p>
                     </div>
-                    <div className={Style['gallery']}>
-
-                        <VerticleSlider
-                            image={[FoodUiMockUp, BankingUiMockUp, AdvUiMockUp]} 
-                            description={['Led design for web and mobile apps, ensuring seamless integration.']}
-                        />
-                        <VerticleSlider
-                            image={[GisMockup, EcomMockup, AsplMockup ]} 
-                            description={['Worked on Frontend User Interface on React technology and Angular Technology.']}
-                        />
-                        <h3 className={Style['flowchart-heading']}>Conducted user research, enhancing user-centric design.</h3>
-                        <FlowchartComponent />
-                        <VerticleSlider
-                            image={[]} 
-                            description={['Worked on CRUD operation.']}
-                        />
-                        <VerticleSlider
-                            image={[]} 
-                            description={['Collaborated with developers, product managers, and stakeholders.']}
-                        />
-                        <VerticleSlider
-                            image={[]} 
-                            description={['Used version control systems for Pull Requests, Merge Requests and Reviewing.']}
-                        />
-
-                    </div>
+                    <FancyScrollComponenet
+                    title={["UI-Ux"]}
+                    heading={['Front-End UI UX Desigining']}
+                    description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
+                    image={[FoodUiMockUp]}
+                    />
+                    <FancyScrollComponenet
+                    title={["Libraries-Frameworks"]}
+                    heading={['Front-End UI Development']}
+                    description={['Contributed to Frontend UI, leveraging React and Angular technologies, enhancing user interfaces with dynamic, responsive, and engaging designs.']}
+                    image={[GisMockup]}
+                    />
+                    <FancyScrollComponenet
+                    title={["UI-Ux"]}
+                    heading={['Front-End UI UX Desigining']}
+                    description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
+                    image={[FoodUiMockUp]}
+                    />
                 </div>
             </div>
         </React.Fragment>

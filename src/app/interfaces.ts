@@ -12,3 +12,10 @@ export interface VerticleSliderProps {
   description: string[];
 }
 
+export interface FancyScrollProps{
+  image: string[];
+  title : string[];
+  heading : string[];
+  description: string[];
+  
+}

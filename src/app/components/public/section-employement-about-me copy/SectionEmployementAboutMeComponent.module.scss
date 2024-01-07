@@ -2,8 +2,13 @@
     width: 100%;
     background: linear-gradient(180deg, #060B16 0%, #1E1E1E 100%);
 
+    h2 {
+        font-weight: 500;
+    }
     .content-wrapper {
         width: 100%;
+        display: flex;
+        flex-direction: column;
 
         .content {
             display: flex;
@@ -11,21 +16,14 @@
             justify-content: center;
             align-items: center;
             color: white;
+            margin: 64px;
 
-            h2 {
-                margin: 64px;
+            .heading{
+                margin-bottom: 64px;
             }
+            
         }
-        .gallery{
-            color: white;
 
-            .flowchart-heading{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 32px;
-                font-weight: 500;
-            }
-        }
+        
     }
 }

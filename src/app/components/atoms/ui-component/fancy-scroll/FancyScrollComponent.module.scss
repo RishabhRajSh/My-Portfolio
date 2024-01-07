@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+
+    .content-wrapper {
+        display: flex;
+
+        .content {
+            display: flex;
+            width: 50vw;
+            padding-left: 32px;
+            flex-direction: column;
+            color: white;
+
+            .heading {
+                margin-bottom: 6px;
+            }
+        }
+        .image{
+            width: 50vw;
+        }
+    }
+}
