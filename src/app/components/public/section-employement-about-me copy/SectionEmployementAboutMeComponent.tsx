@@ -9,8 +9,8 @@ import GisMockup from "../../../../assets/images/ImgGisMockup.png";
 import EcomMockup from "../../../../assets/images/ImgEcomMockup.png";
 import AsplMockup from "../../../../assets/images/ImgAsplMockup.png";
 import FlowchartComponent from "../../atoms/ui-component/flow-chart/FlowChartComponent";
-import FancyScrollComponenet from "../../atoms/ui-component/fancy-scroll/FancyScrollComponent";
-
+import FancyScrollComponent from "../../atoms/ui-component/fancy-scroll/FancyScrollComponent";
+import Flowchart from "../../../../assets/images/ImgFlowchartmockup.png"
 const SectionEmployement = () => {
 
     return (
@@ -22,23 +22,23 @@ const SectionEmployement = () => {
                         <img className={Style['logo']} src={LogoAccuratics} alt='Accuratics Logo' />
                         <p>ROLES AND RESPONSIBILITIES</p>
                     </div>
-                    <FancyScrollComponenet
+                    <FancyScrollComponent
                     title={["UI-Ux"]}
                     heading={['Front-End UI UX Desigining']}
                     description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
                     image={[FoodUiMockUp]}
                     />
-                    <FancyScrollComponenet
+                    <FancyScrollComponent
                     title={["Libraries-Frameworks"]}
                     heading={['Front-End UI Development']}
                     description={['Contributed to Frontend UI, leveraging React and Angular technologies, enhancing user interfaces with dynamic, responsive, and engaging designs.']}
                     image={[GisMockup]}
                     />
-                    <FancyScrollComponenet
-                    title={["UI-Ux"]}
-                    heading={['Front-End UI UX Desigining']}
+                    <FancyScrollComponent
+                    title={["Diagrams and Flow"]}
+                    heading={['User Reasearch with Flow']}
                     description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
-                    image={[FoodUiMockUp]}
+                    image={[Flowchart]}
                     />
                 </div>
             </div>
