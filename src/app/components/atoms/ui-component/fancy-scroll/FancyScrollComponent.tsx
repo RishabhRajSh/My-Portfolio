@@ -1,45 +1,30 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 import Style from "./FancyScrollComponent.module.scss";
 import { FancyScrollProps } from '../../../../interfaces';
 
 const FancyScrollComponent: React.FC<FancyScrollProps> = ({ title, heading, description, image }) => {
-   const containerRef = useRef<HTMLDivElement>(null);
-   const imageRef = useRef<HTMLImageElement>(null);
-   const [isVisible, setIsVisible] = useState(false);
-   const [scrollPosition, setScrollPosition] = useState(0);
+   const containerRef = useRef<HTMLDivElement>(null)
+   const imageRef = useRef<HTMLImageElement>(null)
+   const [isVisible, setIsVisible] = useState(false)
+   const [scrollPosition] = useState(0)
 
    useEffect(() => {
        const observer = new IntersectionObserver(
            ([entry]) => {
-               setIsVisible(entry.isIntersecting);
+               setIsVisible(entry.isIntersecting)
            },
            { threshold: 1 }
-       );
+       )
 
        if (containerRef.current) {
-           observer.observe(containerRef.current);
+           observer.observe(containerRef.current)
        }
 
-       const handleScroll = () => {
-           if (imageRef.current && isVisible) {
-               const scrollY = window.scrollY || window.pageYOffset;
-               setScrollPosition(scrollY);
-           }
-       };
-
-       window.addEventListener('scroll', handleScroll);
-
-       return () => {
-           if (containerRef.current) {
-               observer.unobserve(containerRef.current);
-           }
-           window.removeEventListener('scroll', handleScroll);
-       };
-   }, []); 
+   }, [])
 
    const parallaxStyle = {
        transform: `translateY(${scrollPosition * 0.5}px)`, 
-   };
+   }
 
    return (
        <React.Fragment>
@@ -60,7 +45,7 @@ const FancyScrollComponent: React.FC<FancyScrollProps> = ({ title, heading, desc
                </div>
            </div>
        </React.Fragment>
-   );
-};
+   )
+}
 
-export default FancyScrollComponent;
+export default FancyScrollComponent
