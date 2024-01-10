@@ -24,14 +24,12 @@
 
         .fixed {
             position: fixed;
-            top: 50%;
+            top: 50%; 
             right: 0;
-            transform: translateY(-50%);
-            transition: transform 1.5s ease-in-out;
         }
 
         .img-enter {
-            opacity: 1;
+            opacity: 0;
             transition: opacity 500ms ease-in-out;
           }
           
