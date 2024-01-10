@@ -21,13 +21,33 @@
         .image {
             width: 50vw;
         }
+
         .fixed {
             position: fixed;
             top: 50%;
             right: 0;
             transform: translateY(-50%);
             transition: transform 1.5s ease-in-out;
-           }
-           
+        }
+
+        .img-enter {
+            opacity: 1;
+            transition: opacity 500ms ease-in-out;
+          }
+          
+          .img-enter-active {
+            opacity: 1;
+          }
+          
+          .img-exit {
+            opacity: 1;
+            transition: opacity 500ms ease-in-out;
+          }
+          
+          .img-exit-active {
+            opacity: 0;
+          }
+          
     }
+
 }

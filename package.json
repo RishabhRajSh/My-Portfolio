@@ -25,6 +25,7 @@
     "react-scroll": "^1.9.0",
     "react-scroll-parallax": "^3.4.5",
     "react-scroll-to-top": "^3.0.0",
+    "react-transition-group": "^4.4.5",
     "react-use": "^17.4.2",
     "reactflow": "^11.10.1",
     "redux": "^5.0.1",
@@ -60,6 +61,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/react-scroll": "^1.8.10"
+    "@types/react-scroll": "^1.8.10",
+    "@types/react-transition-group": "^4.4.10"
   }
 }

@@ -1,54 +1,46 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import { CSSTransition } from 'react-transition-group';
 import Style from "./FancyScrollComponent.module.scss";
 import { FancyScrollProps } from '../../../../interfaces';
+import { useInView } from 'react-intersection-observer';
 
 const FancyScrollComponent: React.FC<FancyScrollProps> = ({ title, heading, description, image }) => {
-    const containerRef = useRef<HTMLDivElement>(null)
-    const imageRef = useRef<HTMLImageElement>(null)
-    const [isVisible, setIsVisible] = useState(false)
-    const [scrollPosition] = useState(1)
-    
+  const [ref, inView] = useInView({
+      threshold: 1,
+  });
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting);
-            },
-            { threshold: 1 }
-        )
-
-        if (containerRef.current) {
-            observer.observe(containerRef.current)
-        }
-
-    }, [])
-
-    const parallaxStyle = {
-        transform: `translateY(${scrollPosition * 1}px)`,
-    }
-
-    return (
-        <React.Fragment>
-            <div ref={containerRef} className={Style['container']}>
-                <div className={Style['content-wrapper']}>
-                    <div className={Style['content']}>
-                        <h2 className={Style['title']}>{title}</h2>
-                        <p className={Style['heading']}>{heading}</p>
-                        <p className={Style['description']}>{description}</p>
-                    </div>
-                    {isVisible && (
-                        <img
-                            ref={imageRef}
-                            src={image[0]}
-                            alt="image"
-                            className={`${Style['image']} ${Style['fixed']}`}
-                            style={parallaxStyle}
-                        />
-                    )}
+  return (
+      <React.Fragment>
+          <div ref={ref} className={Style['container']}>
+              <div className={Style['content-wrapper']}>
+                <div className={Style['content']}>
+                    <h2 className={Style['title']}>{title}</h2>
+                    <p className={Style['heading']}>{heading}</p>
+                    <p className={Style['description']}>{description}</p>
                 </div>
-            </div>
-        </React.Fragment>
-    )
-}
+                <CSSTransition
+                    in={inView}
+                    timeout={500}
+                    classNames={{
+                        enter: Style['img-enter]'],
+                        enterActive: Style['img-enter-active'],
+                        exit: Style['img-exit'],
+                        exitActive: Style['img-exit-active']
+                    }}
+                    mountOnEnter
+                    unmountOnExit
+                    key={image} 
+                >
+                    <img
+                        src={image}
+                        alt="image"
+                        className={`${Style['image']} ${Style['fixed']}`}
+                    />
+                </CSSTransition>
+              </div>
+          </div>
+      </React.Fragment>
+  );
+};
 
-export default FancyScrollComponent
+export default FancyScrollComponent;
