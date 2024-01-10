@@ -23,22 +23,22 @@ const SectionEmployement = () => {
                         <p>ROLES AND RESPONSIBILITIES</p>
                     </div>
                     <FancyScrollComponent
-                    title={["UI-Ux"]}
-                    heading={['Front-End UI UX Desigining']}
-                    description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
-                    image={[FoodUiMockUp]}
+                        title={["UI-Ux"]}
+                        heading={['Front-End UI UX Desigining']}
+                        description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
+                        image={[FoodUiMockUp]}   
                     />
                     <FancyScrollComponent
-                    title={["Libraries-Frameworks"]}
-                    heading={['Front-End UI Development']}
-                    description={['Contributed to Frontend UI, leveraging React and Angular technologies, enhancing user interfaces with dynamic, responsive, and engaging designs.']}
-                    image={[GisMockup]}
+                        title={["Libraries-Frameworks"]}
+                        heading={['Front-End UI Development']}
+                        description={['Contributed to Frontend UI, leveraging React and Angular technologies, enhancing user interfaces with dynamic, responsive, and engaging designs.']}
+                        image={[GisMockup]}
                     />
                     <FancyScrollComponent
-                    title={["Diagrams and Flow"]}
-                    heading={['User Reasearch with Flow']}
-                    description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
-                    image={[Flowchart]}
+                        title={["Diagrams and Flow"]}
+                        heading={['User Reasearch with Flow']}
+                        description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
+                        image={[Flowchart]}
                     />
                 </div>
             </div>
