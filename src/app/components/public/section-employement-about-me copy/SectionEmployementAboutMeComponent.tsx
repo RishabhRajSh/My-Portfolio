@@ -2,7 +2,7 @@ import React from "react";
 import Style from "./SectionEmployementAboutMeComponent.module.scss";
 import LogoAccuratics from "../../../../assets/icon/LogoAccuraticsSoftwares.svg";
 import VerticleSlider from "../../atoms/ui-component/verticle-slider-component/VerticleSliderComponent";
-import FoodUiMockUp from "../../../../assets/images/ImgFoodOrderUiMockup.png";
+import FoodUiMockUp from "../../../../assets/images/ImgFoodOrderUiMockup.webp";
 import BankingUiMockUp from "../../../../assets/images/ImgBankingAppUiMockup.png";
 import AdvUiMockUp from "../../../../assets/images/ImgAdvetisementWebsiteMockup.png";
 import GisMockup from "../../../../assets/images/ImgGisMockup.png";
@@ -25,19 +25,25 @@ const SectionEmployement = () => {
                     <FancyScrollComponent
                         title={["UI-Ux"]}
                         heading={['Front-End UI UX Desigining']}
-                        description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
+                        description={["As a design guide for web and mobile applications, I meticulously shape user interfaces, prioritizing seamless integration. My focus is on creating a unified and exceptional user experience that transcends across various platforms."]}
                         image={FoodUiMockUp}   
                     />
                     <FancyScrollComponent
                         title={["Libraries-Frameworks"]}
                         heading={['Front-End UI Development']}
-                        description={['Contributed to Frontend UI, leveraging React and Angular technologies, enhancing user interfaces with dynamic, responsive, and engaging designs.']}
+                        description={["Contributed significantly to the Frontend UI by harnessing React and Angular technologies. Enhanced user interfaces with dynamic, responsive, and engaging designs, elevating overall user experience and ensuring seamless interactions on diverse platforms."]}
                         image={GisMockup}
                     />
                     <FancyScrollComponent
                         title={["Diagrams and Flow"]}
                         heading={['User Reasearch with Flow']}
-                        description={['Guided design for web and mobile apps, ensuring smooth integration for a unified user experience across platforms.']}
+                        description={["Guiding the design process for web and mobile applications, I ensure a cohesive user experience. My approach prioritizes smooth integration across platforms, fostering a unified and user-friendly digital environment."]}
+                        image={Flowchart}
+                    />
+                    <FancyScrollComponent
+                        title={["CRUD Operation"]}
+                        heading={['Data Management with CRUD Operations']}
+                        description={['Experience seamless data manipulation and organization through the implementation of CRUD (Create, Read, Update, Delete) operations. Navigate the intricacies of efficient data handling, ensuring a robust foundation for web and mobile applications.']}
                         image={Flowchart}
                     />
                 </div>

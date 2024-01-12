@@ -1,51 +1,50 @@
 .container {
-    width: 100%;
-    height: 50vh;
+  width: 100%;
+  height: 50vh;
 
-    .content-wrapper {
-        display: flex;
-        margin-top: 64px;
+  .content-wrapper {
+      display: flex;
+      margin-top: 64px;
 
-        .content {
-            display: flex;
-            width: 50vw;
-            padding-left: 32px;
-            flex-direction: column;
-            color: white;
+      .content {
+          display: flex;
+          width: 50vw;
+          padding-left: 32px;
+          flex-direction: column;
+          color: white;
 
-            .heading {
-                margin-bottom: 6px;
-            }
-        }
-
-        .image {
-            width: 50vw;
-        }
-
-        .fixed {
-            position: fixed;
-            top: 50%; 
-            right: 0;
-        }
-
-        .img-enter {
-            opacity: 0;
-            transition: opacity 500ms ease-in-out;
+          .heading {
+              margin-bottom: 6px;
           }
-          
-          .img-enter-active {
-            opacity: 1;
-          }
-          
-          .img-exit {
-            opacity: 1;
-            transition: opacity 500ms ease-in-out;
-          }
-          
-          .img-exit-active {
-            opacity: 0;
-          }
-          
-    }
+      }
 
+      .image {
+          width: 50vw;
+          will-change: opacity; 
+      }
+
+      .fixed {
+          position: sticky;
+          top: 50%;
+          right: 0;
+      }
+
+      .img-enter {
+          opacity: 0.5;
+          transition: opacity 500ms ease-in; 
+      }
+
+      .img-enter-active {
+          opacity: 1;
+      }
+
+      .img-exit {
+          opacity: 0.5;
+          transition: opacity 500ms ease-out; 
+      }
+
+      .img-exit-active {
+          opacity: 0;
+      }
+  }
 }

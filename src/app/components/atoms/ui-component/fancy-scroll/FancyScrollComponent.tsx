@@ -13,16 +13,16 @@ const FancyScrollComponent: React.FC<FancyScrollProps> = ({ title, heading, desc
       <React.Fragment>
           <div ref={ref} className={Style['container']}>
               <div className={Style['content-wrapper']}>
-                <div className={Style['content']}>
+                <div className={Style['content']} style={{ opacity: inView ? 1 : 0.5 }}>
                     <h2 className={Style['title']}>{title}</h2>
                     <p className={Style['heading']}>{heading}</p>
-                    <p className={Style['description']}>{description}</p>
+                    <p  className={Style['description']}>{description}</p>
                 </div>
                 <CSSTransition
                     in={inView}
                     timeout={500}
                     classNames={{
-                        enter: Style['img-enter]'],
+                        enter: Style['img-enter'],
                         enterActive: Style['img-enter-active'],
                         exit: Style['img-exit'],
                         exitActive: Style['img-exit-active']
