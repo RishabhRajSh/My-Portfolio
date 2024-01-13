@@ -1,14 +1,9 @@
 import React from "react";
 import Style from "./SectionEmployementAboutMeComponent.module.scss";
 import LogoAccuratics from "../../../../assets/icon/LogoAccuraticsSoftwares.svg";
-import VerticleSlider from "../../atoms/ui-component/verticle-slider-component/VerticleSliderComponent";
-import FoodUiMockUp from "../../../../assets/images/ImgFoodOrderUiMockup.webp";
-import BankingUiMockUp from "../../../../assets/images/ImgBankingAppUiMockup.png";
-import AdvUiMockUp from "../../../../assets/images/ImgAdvetisementWebsiteMockup.png";
+import FoodUiMockUp from "../../../../assets/images/ImgFoodOrderUiMockup.png";
+import CRUDUiMockUp from "../../../../assets/images/ImgDashboardCRUDMockup.png";
 import GisMockup from "../../../../assets/images/ImgGisMockup.png";
-import EcomMockup from "../../../../assets/images/ImgEcomMockup.png";
-import AsplMockup from "../../../../assets/images/ImgAsplMockup.png";
-import FlowchartComponent from "../../atoms/ui-component/flow-chart/FlowChartComponent";
 import FancyScrollComponent from "../../atoms/ui-component/fancy-scroll/FancyScrollComponent";
 import Flowchart from "../../../../assets/images/ImgFlowchartmockup.png"
 const SectionEmployement = () => {
@@ -44,7 +39,7 @@ const SectionEmployement = () => {
                         title={["CRUD Operation"]}
                         heading={['Data Management with CRUD Operations']}
                         description={['Experience seamless data manipulation and organization through the implementation of CRUD (Create, Read, Update, Delete) operations. Navigate the intricacies of efficient data handling, ensuring a robust foundation for web and mobile applications.']}
-                        image={Flowchart}
+                        image={CRUDUiMockUp}
                     />
                 </div>
             </div>
