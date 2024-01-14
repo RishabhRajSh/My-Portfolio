@@ -25,13 +25,12 @@ To view the portfolio website from other devices on the same local network:
 
    ```plaintext
    http://192.168.x.x:3000
-`
 
 ## Features
-Portfolio Overview: An introduction to my skills, experience, and projects.
-Interactive Elements: Utilizes libraries like react-scroll, framer-motion, and others for smooth and interactive user experience.
-Slideshow Component: A dynamic image slideshow using framer-motion for a visually appealing presentation.
-Responsive Design: Ensures a seamless experience on various devices.
+ - Portfolio Overview: An introduction to my skills, experience, and projects.
+ - Interactive Elements: Utilizes libraries like react-scroll, framer-motion, and others for smooth and interactive user experience.
+ - Slideshow Component: A dynamic image slideshow using framer-motion for a visually appealing presentation.
+ - Responsive Design: Ensures a seamless experience on various devices.
 
 ## Technologies Used
 React, Redux (for state management), CSS/Sass (Styling), Framer Motion (Animations), Axios (HTTP requests), and other dependencies listed in package.json.
