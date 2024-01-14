@@ -6,7 +6,6 @@ import CRUDUiMockUp from "../../../../assets/images/ImgDashboardCRUDMockup.png";
 import GisMockup from "../../../../assets/images/ImgGisMockup.png";
 import FancyScrollComponent from "../../atoms/ui-component/fancy-scroll/FancyScrollComponent";
 import Flowchart from "../../../../assets/images/ImgFlowchartmockup.png"
-import SlideShow from "../../atoms/ui-component/slideshow-component/SlideShowComponent";
 const SectionEmployement = () => {
 
     return (

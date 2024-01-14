@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "./SectionProjectsAboutMeComponet.module.scss";
+import SlideShow from "../../atoms/ui-component/slideshow-component/SlideShowComponent";
 
 
 const SectionProjects = () => {
