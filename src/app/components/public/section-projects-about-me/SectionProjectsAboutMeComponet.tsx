@@ -9,9 +9,11 @@ const SectionProjects = () => {
             <div className={Style['container']} >
                 <div className={Style['content-wrapper']}>
                     <h2 className={Style['heading']}>Project Gallery</h2>
-                    <SlideShow
-                        image={[]}
-                    />
+                    <div className={Style['slide-show']}>
+                        <SlideShow
+                            image={[]}
+                        />
+                    </div>
                 </div>
             </div>
         </React.Fragment>

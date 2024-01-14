@@ -31,10 +31,10 @@ const FancyScrollComponent: React.FC<FancyScrollProps> = ({ title, heading, desc
             }}
             mountOnEnter
             unmountOnExit
-            nodeRef={imageRef} 
+            nodeRef={imageRef}
           >
             <img
-              ref={imageRef} 
+              ref={imageRef}
               src={image}
               alt="image"
               className={`${Style['image']} ${Style['fixed']}`}

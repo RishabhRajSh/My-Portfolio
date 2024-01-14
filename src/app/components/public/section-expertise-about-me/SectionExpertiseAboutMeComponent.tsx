@@ -22,7 +22,7 @@ const SectionExpertise = () =>   {
     return (
         <React.Fragment>
             <div className={Style['container']}>
-                <h2>My Expertise</h2>
+                <h2 className={Style['heading']}>My Expertise</h2>
                 <div className={Style['card-wrapper']}>
                     <CardComponent
                         title="Graphics Designing"
