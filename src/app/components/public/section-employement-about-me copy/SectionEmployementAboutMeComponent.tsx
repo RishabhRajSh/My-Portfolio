@@ -6,6 +6,7 @@ import CRUDUiMockUp from "../../../../assets/images/ImgDashboardCRUDMockup.png";
 import GisMockup from "../../../../assets/images/ImgGisMockup.png";
 import FancyScrollComponent from "../../atoms/ui-component/fancy-scroll/FancyScrollComponent";
 import Flowchart from "../../../../assets/images/ImgFlowchartmockup.png"
+import SlideShow from "../../atoms/ui-component/slideshow-component/SlideShowComponent";
 const SectionEmployement = () => {
 
     return (
@@ -41,6 +42,7 @@ const SectionEmployement = () => {
                         description={['Experience seamless data manipulation and organization through the implementation of CRUD (Create, Read, Update, Delete) operations. Navigate the intricacies of efficient data handling, ensuring a robust foundation for web and mobile applications.']}
                         image={CRUDUiMockUp}
                     />
+                   
                 </div>
             </div>
         </React.Fragment>

@@ -7,9 +7,8 @@ export interface CardComponentProps {
   
 }
 
-export interface VerticleSliderProps {
+export interface SlideShowProps {
   image: string[];
-  description: string[];
 }
 
 export interface FancyScrollProps{

@@ -7,6 +7,9 @@ const SectionProjects = () => {
         <React.Fragment>
             <div className={Style['container']} >
                 <h2>Project Gallery</h2>
+                 {/* <SlideShow 
+                    image={[FoodUiMockUp, GisMockup, Flowchart, CRUDUiMockUp]}
+                    /> */}
             </div>
         </React.Fragment>
     )
