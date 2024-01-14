@@ -33,7 +33,11 @@ To view the portfolio website from other devices on the same local network:
  - Responsive Design: Ensures a seamless experience on various devices.
 
 ## Technologies Used
-React, Redux (for state management), CSS/Sass (Styling), Framer Motion (Animations), Axios (HTTP requests), and other dependencies listed in package.json.
+ - React
+ - Redux (for state management) 
+ - CSS/Sass (Styling)
+ - Framer Motion (Animations) 
+ - Axios (HTTP requests) and other dependencies listed in package.json.
 
 ## Licence
 This project is licensed under the MIT License.
