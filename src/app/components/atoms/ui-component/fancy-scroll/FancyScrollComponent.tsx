@@ -1,15 +1,15 @@
-import React, { useRef } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import Style from "./FancyScrollComponent.module.scss";
-import { FancyScrollProps } from '../../../../interfaces';
-import { useInView } from 'react-intersection-observer';
+import React, { useRef } from 'react'
+import { CSSTransition } from 'react-transition-group'
+import Style from "./FancyScrollComponent.module.scss"
+import { FancyScrollProps } from '../../../../interfaces'
+import { useInView } from 'react-intersection-observer'
 
 const FancyScrollComponent: React.FC<FancyScrollProps> = ({ title, heading, description, image }) => {
   const [ref, inView] = useInView({
     threshold: 1,
-  });
+  })
 
-  const imageRef = useRef<HTMLImageElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null)
 
   return (
     <React.Fragment>
@@ -43,7 +43,7 @@ const FancyScrollComponent: React.FC<FancyScrollProps> = ({ title, heading, desc
         </div>
       </div>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default FancyScrollComponent;
+export default FancyScrollComponent

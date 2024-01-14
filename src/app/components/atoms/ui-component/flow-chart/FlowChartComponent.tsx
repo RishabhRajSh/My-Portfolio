@@ -1,14 +1,14 @@
-import React, { useMemo } from "react";
-import Style from "./FlowChartComponent.module.scss";
+import React, { useMemo } from "react"
+import Style from "./FlowChartComponent.module.scss"
 import ReactFlow, {
     Background,
     MarkerType,
     Controls,
-} from "reactflow";
-import Circle from "./reactflow/Circle";
-import Rectangle from "./reactflow/Rectangle";
-import Diamond from "./reactflow/Diamond";
-import "reactflow/dist/style.css";
+} from "reactflow"
+import Circle from "./reactflow/Circle"
+import Rectangle from "./reactflow/Rectangle"
+import Diamond from "./reactflow/Diamond"
+import "reactflow/dist/style.css"
 
 const edges = [
     {
@@ -207,7 +207,7 @@ const edges = [
             type: MarkerType.ArrowClosed,
         },
     },
-];
+]
 
 const nodes = [
     {
@@ -343,7 +343,7 @@ const nodes = [
 const FlowchartComponent: React.FC = () => {
     const nodeTypes = useMemo(() => ({
         Circle, Rectangle, Diamond
-    }), []);
+    }), [])
 
     return <React.Fragment>
         <div className={Style['container']}>

@@ -1,5 +1,5 @@
-import React from "react";
-import Style from "./SectionEducationAboutMeComponent.module.scss";
+import React from "react"
+import Style from "./SectionEducationAboutMeComponent.module.scss"
 
 const SectionEducation = () => {
     return <React.Fragment>

@@ -1,14 +1,14 @@
-import { memo } from "react";
-import { Handle, NodeProps, Position } from "reactflow";
-import Style from './styles.module.scss';
+import { memo } from "react"
+import { Handle, NodeProps, Position } from "reactflow"
+import Style from './styles.module.scss'
 
 interface RectangleProps extends NodeProps {
   data: {
-    label: string;
-    style?: React.CSSProperties;
-  };
-  targetPosition?: Position;
-  sourcePosition?: Position;
+    label: string
+    style?: React.CSSProperties
+  }
+  targetPosition?: Position
+  sourcePosition?: Position
 }
 
 const Rectangle = ({
@@ -31,9 +31,9 @@ const Rectangle = ({
         position={sourcePosition}
       />
     </div>
-  );
-};
+  )
+}
 
-Rectangle.displayName = "Rectangle";
+Rectangle.displayName = "Rectangle"
 
-export default memo(Rectangle);
+export default memo(Rectangle)

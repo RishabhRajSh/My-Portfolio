@@ -1,5 +1,5 @@
-import React from "react";
-import Style from "./SectionContactAboutMeComponet.module.scss";
+import React from "react"
+import Style from "./SectionContactAboutMeComponet.module.scss"
 
 const SectionContact = () => {
     return <React.Fragment>

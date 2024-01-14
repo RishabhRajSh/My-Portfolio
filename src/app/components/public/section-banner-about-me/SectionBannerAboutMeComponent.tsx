@@ -1,7 +1,7 @@
-import React from "react";
-import Style from "./SectionBannerAboutMeComponent.module.scss";
-import PaperClipIcon from "../../../../assets/icon/paperclip_bold.svg";
-import FigmaIcon from "../../../../assets/icon/IconFigmaStrokeWhite.svg";
+import React from "react"
+import Style from "./SectionBannerAboutMeComponent.module.scss"
+import PaperClipIcon from "../../../../assets/icon/paperclip_bold.svg"
+import FigmaIcon from "../../../../assets/icon/IconFigmaStrokeWhite.svg"
 
 const SectionBannerAboutMe = () => {
     return <React.Fragment>

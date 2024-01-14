@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import PublicView from "./views/public/PublicView";
+import React from "react"
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
+import PublicView from "./views/public/PublicView"
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         <Route path="/public/*" element={<PublicView />} />
       </Routes>
     </Router>
-  );
-};
+  )
+}
 
-export default App;
+export default App

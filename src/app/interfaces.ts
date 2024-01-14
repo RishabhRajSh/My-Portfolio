@@ -1,21 +1,19 @@
 export interface CardComponentProps {
-  title: string;
-  description: string;
-  icon: string[];
-  image: string[];
-  bgcolor: string[];
+  title: string
+  description: string
+  icon: string[]
+  image: string[]
+  bgcolor: string[]
   
 }
 
 export interface SlideShowProps {
-  image: string[];
+  image: string[]
 }
 
 export interface FancyScrollProps{
-  image: string;
-  title : string[];
-  heading : string[];
-  description: string[];
-  
-  
+  image: string
+  title : string[]
+  heading : string[]
+  description: string[]
 }

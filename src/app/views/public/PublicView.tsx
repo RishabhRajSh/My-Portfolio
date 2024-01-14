@@ -1,7 +1,7 @@
-import { Route, Routes } from "react-router-dom";
-import AboutMePage from "./pages/about-me/AboutMePage";
-import PublicLayout from "../../layouts/public/PublicLayout";
-import React from "react";
+import { Route, Routes } from "react-router-dom"
+import AboutMePage from "./pages/about-me/AboutMePage"
+import PublicLayout from "../../layouts/public/PublicLayout"
+import React from "react"
 
 const PublicView = () => {
   return (
@@ -15,4 +15,4 @@ const PublicView = () => {
   );
 }
 
-export default PublicView;
+export default PublicView

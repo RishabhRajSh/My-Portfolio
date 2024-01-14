@@ -1,14 +1,14 @@
-import { memo } from "react";
-import { Handle, NodeProps, Position } from "reactflow";
-import Style from './styles.module.scss';
+import { memo } from "react"
+import { Handle, NodeProps, Position } from "reactflow"
+import Style from './styles.module.scss'
 
 interface DiamondProps extends NodeProps {
   data: {
-    label: string;
-    style?: React.CSSProperties;
-  };
-  targetPosition?: Position;
-  sourcePosition?: Position;
+    label: string
+    style?: React.CSSProperties
+  }
+  targetPosition?: Position
+  sourcePosition?: Position
 }
 
 
@@ -35,6 +35,6 @@ const Diamond = ({
   );
 };
 
-Diamond.displayName = "Diamond";
+Diamond.displayName = "Diamond"
 
-export default memo(Diamond);
+export default memo(Diamond)
