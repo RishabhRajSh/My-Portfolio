@@ -34,8 +34,8 @@
         }
 
         .fixed {
-            position: sticky;
-            top: 50%;
+            position: fixed;
+            top: 40%;
             right: 0;
         }
 
@@ -67,8 +67,7 @@
             }
 
             .fixed {
-                width: 80%;
-                position: fixed;
+                width: 90%;
                 bottom: 0;
             }
         }
