@@ -3,6 +3,7 @@ import Style from "./SectionProjectsAboutMeComponet.module.scss"
 import SlideShow from "../../atoms/ui-component/slideshow-component/SlideShowComponent"
 import AhbAdmin from "../../../../assets/images/ImgAdvetisementWebsitesAdmin.png"
 import BankingMockup from "../../../../assets/images/ImgBankingAppUiMockup.png"
+import BookStoreMockup from "../../../../assets/images/ImgBookStore.png"
 
 const SectionProjects = () => {
     return (
@@ -12,7 +13,7 @@ const SectionProjects = () => {
                     <h2 className={Style['heading']}>Project Gallery</h2>
                     <div className={Style['slide-show']}>
                         <SlideShow
-                            image={[AhbAdmin, BankingMockup]}
+                            image={[AhbAdmin, BankingMockup, BookStoreMockup]}
                         />
                     </div>
                 </div>
