@@ -8,7 +8,7 @@ export interface CardComponentProps {
 }
 
 export interface SlideShowProps {
-  image: string[]
+  images: string[]
 }
 
 export interface FancyScrollProps{

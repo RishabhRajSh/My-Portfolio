@@ -4,6 +4,7 @@ import SlideShow from "../../atoms/ui-component/slideshow-component/SlideShowCom
 import AhbAdmin from "../../../../assets/images/ImgAdvetisementWebsitesAdmin.png"
 import BankingMockup from "../../../../assets/images/ImgBankingAppUiMockup.png"
 import BookStoreMockup from "../../../../assets/images/ImgBookStore.png"
+import GisWeb from "../../../../assets/images/ImgGisWeb.png"
 
 const SectionProjects = () => {
     return (
@@ -13,7 +14,7 @@ const SectionProjects = () => {
                     <h2 className={Style['heading']}>Project Gallery</h2>
                     <div className={Style['slide-show']}>
                         <SlideShow
-                            image={[AhbAdmin, BankingMockup, BookStoreMockup]}
+                            images={[AhbAdmin, BankingMockup, BookStoreMockup, GisWeb]}
                         />
                     </div>
                 </div>

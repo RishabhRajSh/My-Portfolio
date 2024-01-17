@@ -3,17 +3,17 @@ import { motion } from "framer-motion"
 import Style from "./SlideShowComponent.module.scss"
 import { SlideShowProps } from "../../../../interfaces"
 
-const SlideShow: React.FC<SlideShowProps> = ({ image }) => {
+const SlideShow: React.FC<SlideShowProps> = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % image.length)
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
         }, 3000)
 
         return () => clearInterval(intervalId)
 
-    }, [currentIndex, image.length])
+    }, [currentIndex, images.length])
 
     return (
         <div className={Style['container']}>
@@ -27,7 +27,7 @@ const SlideShow: React.FC<SlideShowProps> = ({ image }) => {
             >
                 <img
                     className={Style['image']}
-                    src={image[currentIndex]}
+                    src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}
                 />
             </motion.div>
