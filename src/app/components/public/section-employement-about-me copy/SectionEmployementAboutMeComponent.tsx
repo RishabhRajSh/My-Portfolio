@@ -53,7 +53,10 @@ const SectionEmployement = () => {
                             image={CRUDUiMockUp}
                         />
                     </div>
-                    <RechartComponent data={data} />
+                    <div className={Style['content']}>
+                        <h2 className={Style['heading']}>My Skill levels</h2>
+                        <RechartComponent data={data} />
+                    </div>
                 </div>
             </div>
         </React.Fragment>

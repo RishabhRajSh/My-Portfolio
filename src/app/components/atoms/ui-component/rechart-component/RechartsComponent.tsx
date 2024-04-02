@@ -11,7 +11,7 @@ const RechartComponent: React.FC<RechartProps> = ({ data }) => {
             <div className={Style['content']}>
                 <ResponsiveContainer width="100%" aspect={2}>
                     <LineChart data={modifiedData}>
-                        <Line type="monotone" dataKey="uv" stroke="#ffffff" />
+                        <Line type="monotone" dataKey="uv" stroke="#33b563" />
                         <CartesianGrid stroke="#ffffff" strokeDasharray="5 5" />
                         <XAxis dataKey="name" />
                         <YAxis />
