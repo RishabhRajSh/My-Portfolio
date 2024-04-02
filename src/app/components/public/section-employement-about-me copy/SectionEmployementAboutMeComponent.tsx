@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Style from "./SectionEmployementAboutMeComponent.module.scss"
 import LogoAccuratics from "../../../../assets/icon/LogoAccuraticsSoftwares.svg"
 import FoodUiMockUp from "../../../../assets/images/ImgFoodOrderUiMockup.png"
@@ -6,7 +6,17 @@ import CRUDUiMockUp from "../../../../assets/images/ImgDashboardCRUDMockup.png"
 import GisMockup from "../../../../assets/images/ImgGisMockup.png"
 import FancyScrollComponent from "../../atoms/ui-component/fancy-scroll/FancyScrollComponent"
 import Flowchart from "../../../../assets/images/ImgFlowchartmockup.png"
+import RechartComponent from "../../atoms/ui-component/rechart-component/RechartsComponent"
+
+
 const SectionEmployement = () => {
+    const [data] = useState([
+        { name: 'React Js', uv: 400 },
+        { name: 'Angular Js', uv: 300 },
+        { name: 'Ui/Ux Designing', uv: 450 },
+        { name: 'Node Js', uv: 100 },
+        { name: 'Javascript', uv: 300 },
+    ])
 
     return (
         <React.Fragment>
@@ -43,6 +53,7 @@ const SectionEmployement = () => {
                             image={CRUDUiMockUp}
                         />
                     </div>
+                    <RechartComponent data={data} />
                 </div>
             </div>
         </React.Fragment>

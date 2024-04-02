@@ -17,3 +17,10 @@ export interface FancyScrollProps{
   heading : string[]
   description: string[]
 }
+
+export interface RechartProps{
+  data: {
+    name: string;
+    uv: number;
+  }[];
+}
