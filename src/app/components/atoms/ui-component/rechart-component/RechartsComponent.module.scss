@@ -6,11 +6,16 @@
     padding: 0px 10px;
     align-items: center;
     justify-content: center;
-    
+
     .content{
         box-sizing: border-box;
         height: 100%;
         display: flex;
         color: black;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container{
+        height: auto;
     }
 }

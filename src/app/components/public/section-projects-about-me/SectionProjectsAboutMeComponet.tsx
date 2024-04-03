@@ -12,7 +12,7 @@ const SectionProjects = () => {
             <div className={Style['container']} >
                 <div className={Style['content-wrapper']}>
                     <h2 className={Style['heading']}>Project Gallery</h2>
-                    <div className={Style['slide-show']}>
+                    <div className={Style['slideShow']}>
                         <SlideShow
                             images={[AhbAdmin, BankingMockup, BookStoreMockup, GisWeb]}
                         />
