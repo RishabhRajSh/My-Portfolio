@@ -13,10 +13,10 @@ const SectionEmployement = () => {
     const [data] = useState([
         { name: 'Ui/Ux Designing',  level: 9 },
         { name: 'App Designing',  level: 9 },
-        { name: 'Javascript',  level: 6 },
+        { name: 'Vanila Js',  level: 6 },
         { name: 'React Js',  level: 7  },
         { name: 'Angular Js',level: 8 },
-        { name: 'Frontend Development',  level: 8 },
+        { name: 'Frontend',  level: 8 },
         { name: 'Web Designing',level: 9 },
     ])
 
