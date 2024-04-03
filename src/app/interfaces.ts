@@ -21,6 +21,6 @@ export interface FancyScrollProps{
 export interface RechartProps{
   data: {
     name: string;
-    uv: number;
+    level: number;
   }[];
 }
