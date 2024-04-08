@@ -8,7 +8,7 @@ const RechartComponent: React.FC<RechartProps> = ({ data }) => {
 
     return (<React.Fragment>
         <div className={Style['container']}>
-            <div className={Style['content']}>
+            <div className={Style['content']}> 
                 <ResponsiveContainer width="100%" aspect={2} >
                     <RadarChart cx="50%" cy="50%" outerRadius="90%" data={modifiedData}>
                         <PolarGrid />

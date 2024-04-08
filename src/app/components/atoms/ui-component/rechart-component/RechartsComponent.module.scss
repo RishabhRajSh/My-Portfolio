@@ -7,15 +7,16 @@
     align-items: center;
     justify-content: center;
 
-    .content{
+    .content {
         box-sizing: border-box;
         height: 100%;
         display: flex;
         color: black;
     }
 }
+
 @media only screen and (max-width: 767px) {
-    .container{
-        height: auto;
+    .container {
+        height: 30vh;
     }
 }

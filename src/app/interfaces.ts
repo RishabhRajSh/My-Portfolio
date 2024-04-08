@@ -11,6 +11,7 @@ export interface SlideShowProps {
   images: string[]
 }
 
+
 export interface FancyScrollProps{
   image: string
   title : string[]
