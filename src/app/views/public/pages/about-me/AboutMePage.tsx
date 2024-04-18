@@ -7,6 +7,7 @@ import SectionContact from "../../../../components/public/section-contact-about-
 import SectionExpertise from "../../../../components/public/section-expertise-about-me/SectionExpertiseAboutMeComponent"
 import SectionEmployement from "../../../../components/public/section-employement-about-me copy/SectionEmployementAboutMeComponent"
 import SectionEducation from "../../../../components/public/section-education-about-me/SectionEducationAboutMeComponent"
+import SectionVendor from '../../../../components/public/section-vendor/SectionVendorComponent'
 
 const AboutMePage = () => {
 
@@ -14,12 +15,13 @@ const AboutMePage = () => {
     <React.Fragment>
       <div className={Style['container']}>
         <ScrollToTop />
-        <SectionBannerAboutMe />
-        <SectionExpertise />
-        <SectionEmployement  />
+        <SectionVendor />
+        {/* <SectionBannerAboutMe /> */}
+        {/* <SectionExpertise /> */}
+        {/* <SectionEmployement  /> */}
         {/* <SectionProjects  /> */}
-        <SectionEducation />
-        <SectionContact  />
+        {/* <SectionEducation /> */}
+        {/* <SectionContact  /> */}
       </div>
     </React.Fragment>
   )
