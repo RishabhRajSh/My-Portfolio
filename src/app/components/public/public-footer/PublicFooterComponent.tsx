@@ -5,7 +5,7 @@ const PublicFooterComponent = () => {
     return <React.Fragment>
         <div className={Style["container"]}>
             <div className={Style['content']}>
-                <p>Made by Rishabh Raj Sharma — Copyright 2023</p>
+                <p>Made by Rishabh Raj Sharma — Copyright 2024</p>
             </div>
         </div>
      

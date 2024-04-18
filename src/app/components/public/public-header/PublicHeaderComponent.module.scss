@@ -1,13 +1,13 @@
 .container {
-  width: 100%;
-  position: fixed;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   z-index: 9;
-  padding: 6px;
+  padding: 6px 0;
 
   &.scrolled {
+    position: fixed;
     background: rgba(0, 0, 0, 0.217);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(8px);
@@ -15,6 +15,7 @@
 
   img {
     margin-left: 50px;
+    margin-top: 6px;
     height: 42px;
   }
 

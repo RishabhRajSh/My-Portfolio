@@ -10,11 +10,11 @@ interface Props {
 const PublicLayout = (props: Props) => {
     return <React.Fragment>
         <div className={Style['container']}>
-        <PublicHeaderComponent />
-        <div className={Style['page-wrapper']}>
-            {props.children}
-        </div>
-        <PublicFooterComponent />
+            <PublicHeaderComponent />
+            <div className={Style['page-wrapper']}>
+                {props.children}
+            </div>
+            <PublicFooterComponent />
         </div>
     </React.Fragment>
 }
