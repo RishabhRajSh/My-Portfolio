@@ -7,11 +7,14 @@ import BookStoreMockup from "../../../../assets/images/ImgBookStore.png"
 import GisWeb from "../../../../assets/images/ImgGisWeb.png"
 
 const SectionProjects = () => {
+    const images = [AhbAdmin, BankingMockup, BookStoreMockup, GisWeb];
+
     return (
         <React.Fragment>
             <div className={Style['container']} >
                 <div className={Style['content-wrapper']}>
                     <h2 className={Style['heading']}>Project Gallery</h2>
+                    <SlideShow images={images} />
                 </div>
             </div>
         </React.Fragment>

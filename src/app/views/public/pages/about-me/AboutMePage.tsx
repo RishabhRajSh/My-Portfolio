@@ -17,7 +17,7 @@ const AboutMePage = () => {
         <SectionBannerAboutMe />
         <SectionExpertise />
         <SectionEmployement  />
-        <SectionProjects  />
+        {/* <SectionProjects  /> */}
         <SectionEducation />
         <SectionContact  />
       </div>
