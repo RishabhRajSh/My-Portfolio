@@ -4,16 +4,34 @@ import Avatar from '../../../../../assets/icon/IconLogo.svg'
 import ImgVendorTask from '../../../../../assets/vendor-assets/images/analyze-data.svg'
 import IconAdd from '../../../../../assets/vendor-assets/icon/icon_add.svg'
 import { useState } from "react"
+import { useForm, SubmitHandler } from 'react-hook-form'
+import { DevTool } from '@hookform/devtools'
+
+type FormValues = {
+    newtask: string
+}
 
 const VendorUiCardComponent: React.FC = ({ }) => {
     const [isInputFocused, setInputFocused] = useState(false)
-
     const handleInputFocus = () => {
         setInputFocused(true)
+        
     }
     const handleInputBlur = () => {
         setInputFocused(false)
     }
+
+    const { control, register, reset, handleSubmit, formState } = useForm<FormValues>({
+    })
+
+    const onSubmit: SubmitHandler<FormValues> = (data) => {
+        console.log('Task added:', data);
+        reset({
+            newtask: ''
+        })
+    }
+  
+    const { errors } = formState
 
     return (
         <React.Fragment>
@@ -32,13 +50,34 @@ const VendorUiCardComponent: React.FC = ({ }) => {
                     <h3 className={Style['heading']}>Create a new task</h3>
                     <p className={Style['subheading']}>Start organizing your workflow.</p>
                     <p className={Style['text']}>Create the tasks, for yourself or for your team, and keep track of the progress.</p>
-                    <div className={Style['action']}>
+                    <form onSubmit={handleSubmit(onSubmit)} noValidate className={Style['action']}>
                         <div className={Style['input-wrapper']}>
                             <label className={Style[isInputFocused ? 'label' : 'hidden']}>New Task</label>
-                            <input type="text" onBlur={handleInputBlur} onFocus={handleInputFocus} placeholder="New Task"></input>
+                            <input
+                                type="text"
+                                {...register('newtask', {
+                                    required: {
+                                        value: true,
+                                        message: 'Task name is required',
+                                    },
+                                    validate: {
+                                        wrongInput: (fieldValue) => {
+                                            return (
+                                                fieldValue !== 'No task' ||
+                                                'Task name is not valid'
+                                            )
+                                        }
+                                    }
+                                })}
+                                onBlur={handleInputBlur}
+                                onFocus={handleInputFocus}
+                                placeholder="New Task"
+                            />
+                            <p className={Style['error']}>{errors.newtask?.message}</p>
                         </div>
                         <button className={Style['button']}><img className={Style['icon']} src={IconAdd} alt="add icon" /> Add new</button>
-                    </div>
+                    </form>
+                    <DevTool control={control} />
                 </div>
             </div>
         </React.Fragment>

@@ -75,10 +75,20 @@ p {
         .action {
             position: relative;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
 
             .input-wrapper {
+                .error {
+                    // position: absolute;
+                    color: red;
+                    padding: 4px 16px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.4px;
+
+                }
+
                 .label {
                     position: absolute;
                     padding: 0 4px;
@@ -100,6 +110,7 @@ p {
                     border-radius: 4px;
                     border: 1px solid #333333;
 
+
                     &:focus {
                         outline: 1px solid #0C8CE9;
                         border: 1px solid #0C8CE9;
@@ -116,6 +127,7 @@ p {
                 gap: 8px;
                 padding: 0 24px 0px 16px;
                 border-radius: 20px;
+                margin-top: 4px;
                 border: none;
                 background: #0C8CE9;
                 color: white;
