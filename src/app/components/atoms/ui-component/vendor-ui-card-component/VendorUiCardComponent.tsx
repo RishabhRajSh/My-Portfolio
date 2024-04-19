@@ -6,31 +6,38 @@ import IconAdd from '../../../../../assets/vendor-assets/icon/icon_add.svg'
 import { useState } from "react"
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { DevTool } from '@hookform/devtools'
+// import InputBox from "../input-box-component/InputBox";
+
+// interface VendorUiCardProps{
+//     title : string
+//     subTitle : string
+//     image : string
+//     heading : string
+//     subheading: string
+//     text: string
+//     label: string
+// }
 
 type FormValues = {
     newtask: string
 }
-
-const VendorUiCardComponent: React.FC = ({ }) => {
+const VendorUiCardComponent: React.FC = () => {
     const [isInputFocused, setInputFocused] = useState(false)
     const handleInputFocus = () => {
         setInputFocused(true)
-        
+
     }
     const handleInputBlur = () => {
         setInputFocused(false)
     }
-
     const { control, register, reset, handleSubmit, formState } = useForm<FormValues>({
     })
-
     const onSubmit: SubmitHandler<FormValues> = (data) => {
         console.log('Task added:', data);
         reset({
             newtask: ''
         })
     }
-  
     const { errors } = formState
 
     return (
@@ -77,11 +84,11 @@ const VendorUiCardComponent: React.FC = ({ }) => {
                         </div>
                         <button className={Style['button']}><img className={Style['icon']} src={IconAdd} alt="add icon" /> Add new</button>
                     </form>
+                    {/* <InputBox /> */}
                     <DevTool control={control} />
                 </div>
             </div>
         </React.Fragment>
     )
 }
-
 export default VendorUiCardComponent
