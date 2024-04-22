@@ -6,6 +6,7 @@ import IconAdd from '../../../../../assets/vendor-assets/icon/icon_add.svg'
 import { useState } from "react"
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { DevTool } from '@hookform/devtools'
+import CustomButton from "./custom-components/CutomButton";
 
 type FormValues = {
     newtask: string
@@ -72,7 +73,13 @@ const VendorUiCardComponent: React.FC = () => {
                             />
                             <p className={Style['error']}>{errors.newtask?.message}</p>
                         </div>
-                        <button className={Style['button']}><img className={Style['icon']} src={IconAdd} alt="add icon" /> Add new</button>
+                        {/* <button className={Style['button']}><img className={Style['icon']} src={IconAdd} alt="add icon" /> Add new</button> */}
+                        <CustomButton
+                            color="#007bff"
+                            icon={IconAdd}
+                            text="Add new"
+                            onClickColor="#F78F14"
+                        />
                     </form>
                     <DevTool control={control} />
                 </div>

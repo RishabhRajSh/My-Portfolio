@@ -108,7 +108,7 @@ p {
                     padding: 16px 0 16px 16px;
                     border-radius: 4px;
                     border: 1px solid #333333;
-                    
+
                     &:focus {
                         padding: 15px 0 15px 15px;
                         outline: 2px solid #0C8CE9;
@@ -117,28 +117,6 @@ p {
                     }
                 }
             }
-
-            button {
-                display: inline-flex;
-                align-items: center;
-                height: 40px;
-                width: auto;
-                gap: 8px;
-                padding: 0 24px 0px 16px;
-                border-radius: 20px;
-                margin-top: 4px;
-                border: none;
-                background: #0C8CE9;
-                color: white;
-                font-size: 14px;
-                letter-spacing: 0.56px;
-
-                &:active {
-                    background: #F78F14;
-                    color: white;
-                }
-            }
-
         }
     }
 }
