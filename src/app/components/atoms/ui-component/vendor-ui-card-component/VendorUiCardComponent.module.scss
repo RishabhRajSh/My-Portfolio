@@ -80,7 +80,6 @@ p {
 
             .input-wrapper {
                 .error {
-                    // position: absolute;
                     color: red;
                     padding: 4px 16px;
                     font-size: 12px;
@@ -109,11 +108,11 @@ p {
                     padding: 16px 0 16px 16px;
                     border-radius: 4px;
                     border: 1px solid #333333;
-
-
+                    
                     &:focus {
-                        outline: 1px solid #0C8CE9;
-                        border: 1px solid #0C8CE9;
+                        padding: 15px 0 15px 15px;
+                        outline: 2px solid #0C8CE9;
+                        border: 2px solid #0C8CE9;
                         caret-color: #0C8CE9;
                     }
                 }
